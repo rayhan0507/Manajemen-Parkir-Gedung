@@ -1,3 +1,6 @@
 # exe
 *.exe
 .DS_Store
+bin
+obj
+Manajemen-Parkir-Gedung.layout
