@@ -8,15 +8,15 @@ struct parkir {
     int lantai;
     string jenisKendaraan;
     int nomorTiket;
-}
+};
 
 struct areaParkir {
     parkir info;
     adrParkir next;
     adrParkir prev;
-}
+};
 
-struct list {
+struct listParkir {
     adrParkir first;
     adrParkir last;
-}
+};
