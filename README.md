@@ -131,9 +131,9 @@ Manajemen-Parkir-Gedung/
 
 **Team Bersiaplah — IF-49-11**
 
-- [@rayhan0507](https://github.com/rayhan0507)
-- [@member-2](https://github.com/muhammadmulkir)
-- [@member-3](https://github.com/andireskiramadhanii)
+- [ryxageneral](https://github.com/rayhan0507)
+- [mulki](https://github.com/muhammadmulkir)
+- [cici](https://github.com/andireskiramadhanii)
 
 
 ## 🔗 Links
