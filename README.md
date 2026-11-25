@@ -2,61 +2,123 @@
 
 <div align="center">
 
+### 🚗 Smart Parking Management System
+
 **Tugas Besar Struktur Data — Kelompok Bersiaplah**
 
-IF-49-11 | 2026/2027
+[![C++](https://img.shields.io/badge/C++-17-00599C?style=for-the-badge&logo=cplusplus)](https://isocpp.org/)
+[![Data Structure](https://img.shields.io/badge/Data_Structure-MLL%20%7C%20BST-8A2BE2?style=for-the-badge)](#-data-structure)
+[![Status](https://img.shields.io/badge/Development-In_Progress-orange?style=for-the-badge)](#-development-progress)
 
-![C++](https://img.shields.io/badge/Language-C++-blue?style=flat-square&logo=cplusplus)
-![Data Structure](https://img.shields.io/badge/Data_Structure-MLL%20%7C%20BST-purple?style=flat-square)
-![Status](https://img.shields.io/badge/Status-In_Progress-orange?style=flat-square)
+*Mengelola parkir lebih terstruktur dengan implementasi Multi Linked List dan Binary Search Tree.*
 
 </div>
 
 ---
 
-## 📌 Tentang Project
+## 📖 About The Project
 
-Project ini merupakan implementasi studi kasus **Manajemen Parkir Gedung** menggunakan bahasa C++.
+**Manajemen Parkir Gedung** merupakan proyek Tugas Besar Struktur Data yang dikembangkan oleh kelompok **Bersiaplah IF-49-11**.
 
-Sistem dirancang untuk mengelola area parkir, kendaraan yang masuk dan keluar, serta tiket parkir untuk pencarian dan perhitungan tarif.
+Aplikasi ini dirancang untuk mengelola area parkir, pencatatan kendaraan masuk dan keluar, serta pengelolaan tiket parkir menggunakan struktur data.
 
-## 🧩 Struktur Data
+### 🎯 Project Objectives
+
+- Mengelola beberapa area parkir dalam satu gedung.
+- Mencatat kendaraan berdasarkan area parkir.
+- Mengelola tiket untuk pencarian dan perhitungan tarif.
+- Mengimplementasikan konsep Multi Linked List dan Binary Search Tree.
+
+## 🧩 Data Structure
 
 Project ini menggunakan dua struktur data utama:
 
-- **Multi Linked List (MLL-00):** Mengelola relasi area parkir (Parent) dan kendaraan (Child) dengan relasi 1-N.
-- **Binary Search Tree (BST):** Mengelola data tiket parkir berdasarkan nomor tiket sebagai key.
+### 1. Multi Linked List (MLL-00)
 
-## 🚧 Development Progress
+Menggunakan relasi **One-to-Many (1-N)**, di mana satu area parkir dapat memiliki banyak kendaraan.
 
-| Komponen | Status |
-|---|---|
-| Repository dan konfigurasi project | ✅ Tersedia |
-| Source file `main.cpp` | 🟡 Kerangka awal |
-| Folder header | 📁 Tersedia |
-| Implementasi MLL-00 | ⏳ Belum terverifikasi |
-| Implementasi BST | ⏳ Belum terverifikasi |
-| Integrasi sistem parkir | ⏳ Belum terverifikasi |
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `kodeArea` | `string` | **Primary Identifier**. Kode unik area parkir |
+| `lantai` | `int` | Lokasi lantai area parkir |
+| `jenisKendaraan` | `string` | Jenis kendaraan yang diperbolehkan |
+| `kapasitasSlot` | `int` | Kapasitas maksimum kendaraan |
+| `platNomor` | `string` | Identitas kendaraan |
+| `jamMasuk` | `time` | Waktu kendaraan masuk |
+| `nomorTiket` | `int` | Nomor tiket kendaraan |
 
-## 🎯 Target Fitur
+### 2. Binary Search Tree (BST)
 
-- 🚗 Pencatatan kendaraan masuk dan keluar.
-- 🅿️ Pengelolaan area dan kapasitas parkir.
-- 🎟️ Pembuatan serta pencarian tiket parkir.
-- 💰 Perhitungan tarif parkir.
-- 📊 Statistik keterisian dan pendapatan area parkir.
+Digunakan untuk menyimpan dan mencari tiket parkir berdasarkan `nomorTiket` sebagai key.
 
-## 🛠️ Teknologi
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| `nomorTiket` | `int` | **BST Key**. Identitas unik tiket |
+| `platNomor` | `string` | Plat nomor kendaraan |
+| `kodeArea` | `string` | Area tempat kendaraan parkir |
+| `jamMasuk` | `time` | Waktu kendaraan masuk |
+| `jamKeluar` | `time` | Waktu kendaraan keluar |
+| `tarif` | `double` | Total biaya parkir |
 
-- C++
-- Code::Blocks / GCC
-- Xcode Project Configuration
-- Git & GitHub
+## ⚙️ Main Features
 
-## 📂 Struktur Repository
+| Feature | Description |
+| :--- | :--- |
+| 🚗 Vehicle Entry | Mencatat kendaraan masuk dan memvalidasi area |
+| 🚙 Vehicle Exit | Menghitung tarif dan menghapus kendaraan dari area |
+| 🎟️ Ticket Management | Membuat dan menyimpan tiket parkir |
+| 🔍 Ticket Search | Mencari tiket berdasarkan nomor tiket |
+| 📊 Area Statistics | Menampilkan keterisian dan pendapatan area |
+
+## 📈 Development Progress
+
+| Component | Progress |
+| :--- | :--- |
+| Repository Setup | ✅ Available |
+| Project Configuration | ✅ Available |
+| Main Program | 🟡 Initial Skeleton |
+| Header Organization | 🟡 Directory Available |
+| Multi Linked List | ⏳ Not Yet Verified |
+| Binary Search Tree | ⏳ Not Yet Verified |
+| System Integration | ⏳ Not Yet Verified |
+
+> Progress di atas mengacu pada file yang terlihat di branch `main`, bukan keseluruhan pekerjaan lokal setiap anggota tim.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+| :--- | :--- |
+| C++ | Main Programming Language |
+| GCC / Code::Blocks | Compilation & Development |
+| Git | Version Control |
+| GitHub | Repository & Collaboration |
+
+## 🚀 Getting Started
+
+Clone repository:
+
+```bash
+git clone https://github.com/rayhan0507/Manajemen-Parkir-Gedung.git
+cd Manajemen-Parkir-Gedung
+```
+
+Compile menggunakan GCC:
+
+```bash
+g++ -std=c++17 main.cpp -o parkir
+```
+
+Run:
+
+```bash
+./parkir
+```
+
+## 📂 Project Structure
 
 ```text
 Manajemen-Parkir-Gedung/
+│
 ├── header/
 ├── Manajemen Parkir Gedung.xcodeproj/
 ├── .gitignore
@@ -65,23 +127,28 @@ Manajemen-Parkir-Gedung/
 └── README.md
 ```
 
-## 🚀 Compile & Run
+## 👥 Authors
 
-```bash
-g++ main.cpp -o parkir
-./parkir
-```
+**Team Bersiaplah — IF-49-11**
 
-## 👥 Team Bersiaplah
+- [@rayhan0507](https://github.com/rayhan0507)
+- [@member-2](https://github.com/)
+- [@member-3](https://github.com/)
+- [@member-4](https://github.com/)
 
-**IF-49-11 — Tugas Besar Struktur Data**
+## 🔗 Links
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/rayhan0507/Manajemen-Parkir-Gedung)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=ko-fi&logoColor=white)](YOUR_PORTFOLIO_LINK)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](YOUR_LINKEDIN_LINK)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](YOUR_INSTAGRAM_LINK)
 
 ---
 
 <div align="center">
 
-Made with ❤️ by **Team Bersiaplah**
+**Made with ❤️ by Team Bersiaplah**
 
-_One parking lot, multiple linked lists, one BST._
+*Organize. Connect. Park.*
 
 </div>
