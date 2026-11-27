@@ -22,7 +22,7 @@ struct listParkir {
 };
 
 void createListParkir(listParkir &L);
-adrParkir allocateParkir(int P);
+adrParkir allocateParkir(int kodeArea);
 void displayParent(listParkir L);
 void insertFirst(listParkir &L, adrParkir P);
 void insertLast(listParkir &L, adrParkir P);
