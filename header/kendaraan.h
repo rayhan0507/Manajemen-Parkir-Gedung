@@ -33,5 +33,5 @@ void deleteFirstKendaraan(listKendaraan &L, adrKendaraan &p);
 void deleteLastKendaraan(listKendaraan &L, adrKendaraan &p);
 void deleteAfterKendaraan(listKendaraan &L, adrKendaraan prec, adrKendaraan &p);
 adrKendaraan findKendaraan(listKendaraan L, string platNomor);
-
+void showKendaraan(listKendaraan L);
 #endif
