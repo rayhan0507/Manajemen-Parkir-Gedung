@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "kendaraan.h"
 using namespace std;
 typedef struct areaParkir *adrParkir;
 
@@ -14,6 +15,7 @@ struct areaParkir {
     parkir info;
     adrParkir next;
     adrParkir prev;
+    adrKendaraan firstKendaraan;
 };
 
 struct listParkir {
