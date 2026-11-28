@@ -28,7 +28,7 @@ struct listKendaraan {
 
 void createlistKendaraan(listKendaraan &L);
 adrKendaraan allocateKendaraan(infoKendaraan data);
-void insertLastKendaraan(listKendaraan, adrKendaraan p);
+void insertLastKendaraan(listKendaraan &L, adrKendaraan p);
 void deleteFirstKendaraan(listKendaraan &L, adrKendaraan &p);
 void deleteLastKendaraan(listKendaraan &L, adrKendaraan &p);
 void deleteAfterKendaraan(listKendaraan &L, adrKendaraan prec, adrKendaraan &p);
